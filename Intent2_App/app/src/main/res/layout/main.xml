@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:text="第一页"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="26sp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:id="@+id/firstEditText"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="我是第一页的内容"
+		android:id="@+id/firstTextView"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="跳到第二页"
+		android:id="@+id/firstButton"/>
+
+</LinearLayout>
+

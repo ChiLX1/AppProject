@@ -7,12 +7,14 @@ import android.util.*;
 import android.view.*;
 import android.view.View.*;
 import android.widget.*;
+import android.widget.CompoundButton.*;
 
 public class MainActivity extends Activity 
 {
 	public EditText et;
 	public Button bt;
 	public TextView tv;
+	public RadioGroup rg_bt;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -21,11 +23,28 @@ public class MainActivity extends Activity
 		
 	    et = (EditText) findViewById(R.id.mainEditText);
 	    bt = (Button) findViewById(R.id.mainButton);
+		rg_bt = (RadioGroup) findViewById(R.id.mainRadioGroup);
 		
-		LayoutInflater layout = this.getLayoutInflater();
-		View view = layout.inflate(R.layout.cal_activity,null);
-		  tv = (TextView) view.findViewById(R.id.name);
-		
+		rg_bt.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
+
+				@Override
+				public void onCheckedChanged(RadioGroup p1, int p2)
+				{
+					// TODO: Implement this method
+					p2 = p1.getCheckedRadioButtonId();
+					switch(p2){
+						case R.id.manRadioButton:
+							Toast.makeText(MainActivity.this,"man",Toast.LENGTH_SHORT).show();
+							break;
+					}
+				}
+				
+
+				
+
+			
+		});
+	
 		
 		
 		bt.setOnClickListener(new OnClickListener(){

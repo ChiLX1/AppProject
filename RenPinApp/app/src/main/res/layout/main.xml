@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:gravity="center_horizontal">
-
-	<TextView
-		android:text="人品小游戏"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textSize="40sp"/>
+	android:layout_width="match_parent"
+	android:orientation="vertical">
 
 	<EditText
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
 		android:ems="10"
-		android:layout_marginTop="21dp"
-		android:hint="姓名"
 		android:id="@+id/mainEditText"/>
-	
+
 	<RadioGroup
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		>
+		android:id="@+id/mainRadioGroup">
 
-	<RadioButton
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="男"/>
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="男"
+			android:id="@+id/manRadioButton"/>
 
-	<RadioButton
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="女"/>
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="女"
+			android:id="@+id/womanRadioButton"/>
+
 	</RadioGroup>
+
 	<Button
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="计算人品"
-		android:layout_marginTop="20dp"
+		android:text="Button"
 		android:id="@+id/mainButton"/>
 
 </LinearLayout>
